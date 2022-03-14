@@ -1,0 +1,26 @@
+/* Titre de niveau 2 dans le contenu */
+.content h2 {
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+
+/* Cible les screenshots dans le contenu */
+.content #screenshots img {
+    padding-top: 1em;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+/* Cible spécifiquement les images au format GIF */
+.content #screenshots img[class~="gif"] {
+    padding-top: 1em;
+    width: 75%;
+    height: 75%;
+}
+
+/* Cible les légendes des screenshots */
+.content #screenshots figure figcaption {
+    padding-top: 0.5em;
+    text-align: initial;
+    font-style: italic;
+}

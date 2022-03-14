@@ -1,0 +1,134 @@
+<!ENTITY % month
+    "(1|2|3|4|5|6|7|8|9|10|11|12)">
+<!ENTITY % day
+	"(1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31)">  
+<!ENTITY % year 
+    "CDATA">
+
+<!ENTITY % coreattrs
+	 "id       ID      #IMPLIED
+	  class    CDATA   #IMPLIED
+	  title    CDATA   #IMPLIED">
+
+<!ENTITY % inline "img | keyword | a | highlight">
+<!ENTITY % datainline "(#PCDATA | %inline; )*">
+<!ENTITY % datainlineul "(#PCDATA | p | %inline; | ul)*">
+
+<!ELEMENT name
+    (#PCDATA)>
+
+<!ELEMENT date EMPTY>
+<!ATTLIST date
+    year %year; #REQUIRED
+    month %month; #REQUIRED
+    day %day; #REQUIRED
+	%coreattrs; #IMPLIED
+    >
+
+<!ELEMENT studio
+    (#PCDATA)>
+<!ATTLIST studio
+    %coreattrs; #IMPLIED
+    >
+
+<!ELEMENT editor
+    (#PCDATA)>
+<!ATTLIST editor
+    %coreattrs; #IMPLIED
+    >
+
+<!ELEMENT genre
+    (#PCDATA)>
+<!ATTLIST genre
+    %coreattrs; #IMPLIED
+    >
+
+<!ELEMENT numsold EMPTY>
+<!ATTLIST numsold
+    sold CDATA #REQUIRED
+	%coreattrs; #IMPLIED
+    >
+
+<!ELEMENT award EMPTY>
+<!ATTLIST award
+    title CDATA #REQUIRED
+    event CDATA #REQUIRED
+	%coreattrs; #IMPLIED
+		>
+
+<!ELEMENT support EMPTY>
+<!ATTLIST support
+    name "(PC|Wii|PlayStation 3|Xbox 360|Nintendo Switch)" #REQUIRED
+	%coreattrs; #IMPLIED
+    >
+
+<!ELEMENT info
+    (name, date, studio, editor?, genre, numsold?, award*, support)>
+<!ATTLIST info
+    %coreattrs; #IMPLIED
+    >
+
+<!ELEMENT dlc
+    (name, date, award*)>
+<!ATTLIST dlc
+    %coreattrs; #IMPLIED
+    >
+
+<!ELEMENT description
+    %datainlineul;>
+<!ATTLIST description
+    %coreattrs; #IMPLIED
+    >
+
+<!ELEMENT story
+		%datainlineul;>
+<!ATTLIST story
+		%coreattrs; #IMPLIED
+		>
+
+<!ELEMENT screenshots
+    (img, p)>
+<!ATTLIST screenshots
+    %coreattrs; #IMPLIED
+    >
+
+<!ELEMENT videogame
+    (info, dlc*, comment, description, story, screenshots)>
+<!ATTLIST videogame
+    %coreattrs; #IMPLIED
+    >
+
+<!ELEMENT img EMPTY>
+<!ATTLIST img
+		src         CDATA  #REQUIRED
+		alt         CDATA  #REQUIRED
+		longdesc    CDATA  #IMPLIED
+		height      CDATA  #IMPLIED
+		width       CDATA  #IMPLIED
+		%coreattrs;
+		>
+
+<!ELEMENT a (#PCDATA)*>
+<!ATTLIST a
+		href        CDATA  #IMPLIED
+		%coreattrs;
+		>
+
+<!ELEMENT highlight %datainline;>
+<!ATTLIST highlight
+		%coreattrs;
+		>
+
+<!ELEMENT p %datainline;>
+<!ATTLIST p
+		%coreattrs;
+		>
+
+<!ELEMENT ul (li)+>
+
+<!ELEMENT li %datainlineul;>
+<!ATTLIST li
+		%coreattrs;
+		>
+
+<!-- certains éléments et entités ont été "empruntées" de l'exemple fourni sur updago :) -->

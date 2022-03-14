@@ -1,0 +1,16 @@
+/* Cible le tableau avec la classe synoptic */
+table.synoptic {
+    border: 1px solid;
+}
+
+/* Cible le titre du tableau synoptique */
+table.synoptic thead tr th {
+    font-size: 32px;
+    padding: 1.5em;
+}
+
+/* Cible les éléments du tableau synoptique */
+table.synoptic tbody tr, table.synoptic tbody tr td {
+    padding: 1em;
+    border: 1px solid;
+}

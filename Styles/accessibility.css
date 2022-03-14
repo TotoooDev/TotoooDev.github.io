@@ -1,0 +1,6 @@
+/* Agrandit la taille de la police et augmente le constraste dans le contenu */
+body {
+    color: white !important;
+    font-size: 2em !important;
+    background-color: black !important;
+}

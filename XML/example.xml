@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE videogame SYSTEM "video_game.dtd">
+
+<videogame>
+
+    <info>
+        <name> Portal 2 </name>
+
+        <date day = "19" month = "4" year = "2011" />
+
+        <studio> Valve </studio>
+
+        <genre> Puzzle platformer </genre>
+
+        <numsold sold = "4000000" />
+
+        <award title = "Game of the Year" event = "IGN" />
+        <award title = "Meilleur scenario, Meilleur design" event = "British Academy Video Games Awards" />
+        
+        <support name = "PC" />
+        <support name = "PlayStation 3" />
+        <support name = "Xbox 360" />
+        <support name = "Nintendo Switch" />
+    </info>
+
+    <dlc>
+        <name> Peer Review </name>
+
+        <date day = "4" month = "10" year = "2011" />
+
+        <award title = "Best DLC" event = "Golden Joystick Awards 2012" />
+    </dlc>
+
+    <description>
+        <p>Portal 2 est un puzzle platformer développé et édité par Valve, qui a pour principale mécanique de gameplay le portal gun, un outil qui permet de poser des portails de téléportation sur des murs. Les portails sont connectés entre eux : lorsque le joueur rentre dans le portail orange, il ressort du portail bleu avec la même vitesse qu'il avait en rentrant. Le jeu possède plus d'une centaine de chambres de tests qui exploitent tous les mécaniques du jeu d'une manière différente (en comptant la co-op et les DLC).</p>
+    </description>
+
+    <story>
+        <p>Le jeu se déroule plusieurs années après Portal, lorsque Chell, le personnage du joueur est réveillée de son sommeil cryogénique par Wheatley, un petit robot sphérique qui lui dicte la marche à suivre pour sortir du complexe dans lequel Chell était endormie. En voulant sortir, Wheatley réactive sans faire exprès GLaDoS, l'antagoniste principale du premier jeu. GLaDoS décide de placer Chell dans ses salles de test afin de tester son intelligence.</p>
+    </story>
+
+    <screenshots>
+        <img src = "../../Images/portal2.png" alt = "portal 2 mais c'est moi qui ai dessiné" />
+    </screenshots>
+
+</videogame>

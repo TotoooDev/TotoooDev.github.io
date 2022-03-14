@@ -1,0 +1,76 @@
+/* Cible tout le texte */
+html, body {
+    background-color: #202020;
+    font-family: Arial;
+    color: white;
+    margin: 0;
+}
+
+/* Cible la liste dans la side bar */
+.navbar ul {
+    position: fixed;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    width: 10%;
+    height: 100%;
+    background-color: #303030;
+}
+
+/* Cible l'image de moi dans la side bar */
+.navbar img.toto {
+    margin-top: 16px;
+    max-width: 3em;
+    max-height: 3em;
+    border-radius: 100%;
+}
+
+/* Cible les liens et les images des éléments de listes dans la side bar */
+.navbar li a, li img {
+    display: block;
+    padding: 8px 16px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Cible les liens enfants des éléments de listes dans la side bar */
+.navbar li > a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Même chose qu'au-dessus mais seulement quand la souris passe sur le lien */
+.navbar li > a:hover {
+    background-color: white;
+    color: #101010;
+}
+
+/* Même chose qu'au-dessus mais seulement quand le lien est cliqué */
+.navbar li > a:active {
+    background-color: lightgray;
+}
+
+/* Cible tous les éléments du contenu */
+.content {
+    color: white;
+    margin-left: 10%;
+    padding: 1em;
+}
+
+/* Cible les liens dans le contenu */
+.content a {
+    padding: 0.2em;
+    color: white;
+    text-decoration: none;
+}
+
+/* Même chose qu'au-dessus mais seulement quand la souris passe sur le lien */
+.content a:hover {
+    background-color: white;
+    color: #101010;
+}
+
+/* Cible les éléments de listes dans le contenu */
+.content li {
+    padding: 0.5em;
+}
